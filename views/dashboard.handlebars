@@ -1,9 +1,6 @@
 <ul id="postlist">
-  <li>
-    <button id="postbutton">
-      <span id="title">{{post.title}}</span>
-      <span id="date">{{post.time}}</span>
-    </button>
-  </li>
+    {{#each posts as |post|}}
+    {{> mypost}}
+    {{/each}}
 </ul>
 <button id="newpost">+ New Post</button>
